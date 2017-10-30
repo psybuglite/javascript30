@@ -58,13 +58,20 @@ header h1 {
 }
 
 .main .projects .project .day {
-  height: 200px;
   background-image: url("../img/pic.jpg");
+}
+
+.main .projects .project .day-1 {
+  background-image: url("../img/day-1.png");
+}
+
+.main .projects .project .day, .main .projects .project .day-1 {
+  height: 200px;
   background-size: cover;
   background-position: center center;
 }
 
-.main .projects .project .day p {
+.main .projects .project .day p, .main .projects .project .day-1 p {
   background-color: #fff951;
   color: black;
   width: 45px;
