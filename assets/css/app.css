@@ -132,6 +132,12 @@ kbd {
   font-size: 3em;
 }
 
+.below {
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto 50px auto;
+}
+
 @media screen and (max-width: 700px) {
   header h1 {
     font-size: 3rem;
