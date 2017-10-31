@@ -26,6 +26,9 @@ function setDate() {
     minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
     hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
+    const tick = document.querySelector(".tick");
+    //console.log(tick);
+    tick.play();
 }
 
 setInterval(setDate, 1000);
