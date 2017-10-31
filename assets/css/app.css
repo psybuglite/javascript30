@@ -70,13 +70,17 @@ header h1 {
   background-image: url("../img/day-1.png");
 }
 
-.main .projects .project .day, .main .projects .project .day-1 {
+.main .projects .project .day-2 {
+  background-image: url("../img/day-2.png");
+}
+
+.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2 {
   height: 200px;
   background-size: cover;
   background-position: center center;
 }
 
-.main .projects .project .day p, .main .projects .project .day-1 p {
+.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p {
   background-color: #fff951;
   color: black;
   width: 45px;
@@ -167,6 +171,8 @@ h3 {
   flex-direction: row;
   border: 10px solid #1aa3ff;
   padding: 20px;
+  width: 80%;
+  justify-content: center;
 }
 
 .analogue .clock-frame {
@@ -220,8 +226,8 @@ h3 {
   height: 10px;
   background-color: black;
   position: absolute;
-  top: 49%;
-  right: 49%;
+  top: 49.25%;
+  right: 51%;
   border-radius: 50%;
 }
 
