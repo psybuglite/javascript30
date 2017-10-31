@@ -1,0 +1,76 @@
+.clocks
+  display: flex
+  
+
+.clock
+  width: 50%
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.digital
+  display: flex
+  flex-direction: row
+  font-family: "digital", sans-serif
+  font-size: 9em
+  
+  .time
+    display: flex
+    flex-direction: row
+    border: 10px solid #1aa3ff
+    padding: 20px
+
+.analogue
+
+  .clock-frame
+    width: 350px
+    height: 350px
+    border: 20px solid black
+    border-radius: 50%
+    position: relative
+    padding: 15px
+
+    .hand-hour
+      position: absolute
+      width: 35%
+      height: 10px
+      top: 49%
+      background: #1aa3ff
+      margin-left: 20%
+      transition: all 0.5
+      transform-origin: 67.5%
+      transform: rotate(90deg)
+      transition-timing-function: cubic-bezier(0.42, 0, 0, 1.91)
+
+    .hand-minute
+      position: absolute
+      width: 52%
+      height: 5px
+      top: 49%
+      background: #1aa3ff
+      margin-top: 2.5px
+      margin-left: 2%
+      transform-origin: 80%
+      transform: rotate(90deg)
+
+    .hand-second
+      position: absolute
+      width: 60%
+      height: 2px
+      top: 49%
+      background: #1aa3ff
+      margin-top: 4.5px
+      transform-origin: 70%
+      transform: rotate(90deg)
+      margin-left: 2%
+
+    .dot
+      width: 10px
+      height: 10px
+      background-color: black
+      position: absolute
+      top: 49%
+      right: 49%
+      border-radius: 50%
