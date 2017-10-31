@@ -42,7 +42,9 @@ header
     margin: 50px auto
 
     .project:hover
-      transform: scale(1.2)
+      -webkit-box-shadow: 0px 12px 23px 0px rgba(50, 50, 50, 0.75)
+      -moz-box-shadow:    0px 12px 23px 0px rgba(50, 50, 50, 0.75)
+      box-shadow:         0px 12px 23px 0px rgba(50, 50, 50, 0.75)
     
     .project
       width: calc(25% - 2rem)
@@ -50,7 +52,7 @@ header
       -webkit-box-shadow: 0px 6px 13px 0px rgba(50, 50, 50, 0.75)
       -moz-box-shadow:    0px 6px 13px 0px rgba(50, 50, 50, 0.75)
       box-shadow:         0px 6px 13px 0px rgba(50, 50, 50, 0.75)
-      transition: 0.5s
+      transition: all 0.5s
 
       .day 
         background-image: url("../img/pic.jpg")
