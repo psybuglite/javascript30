@@ -1,5 +1,6 @@
 var runningTotal = "";
-var result = document.querySelector(".display");
+var result = document.querySelector(".compute");
+var answer = document.querySelector(".answer");
 
 var buttons = Array.from(document.querySelectorAll("p"));
 
@@ -12,9 +13,10 @@ function handleComputation(event) {
     if (content === "c") {
         runningTotal = "";
         result.innerHTML = runningTotal;
+        answer.innerHTML = runningTotal;
     } else if (content === "=") {
         runningTotal = eval(runningTotal);
-        result.innerHTML = runningTotal;
+        answer.innerHTML = "ANS = " + runningTotal;
     } else if (content === "+" || content === "/" || content === "*" || content === "-") {
         runningTotal = result.innerHTML + content;
         result.innerHTML = runningTotal;
