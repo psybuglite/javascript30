@@ -246,6 +246,122 @@ h3 {
   align-items: center;
 }
 
+.calc-wrap {
+  border: 4px solid #999;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 288px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.calculator .playing {
+  border-bottom: 1px solid #ccc;
+  transform: scale(1.05);
+}
+
+.calculator .display {
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 10px;
+  text-align: right;
+  overflow-x: hidden;
+  font-family: "digital";
+  font-size: 1.5em;
+}
+
+.calculator .calc-controls {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.calculator .calc-controls p {
+  width: 64px;
+  height: 48px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 2px solid #999;
+  margin: 2px;
+  background: #eeeef0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.05s;
+}
+
+.calculator .calc-controls p:hover {
+  cursor: pointer;
+}
+
+.calculator .chars {
+  display: flex;
+  text-align: center;
+  height: 100px;
+  align-items: center;
+  margin: 4px 0px 8px 0px;
+}
+
+.calculator .chars .char-more {
+  width: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.calculator .chars .char-more p {
+  width: 64px;
+  height: 48px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 2px solid #999;
+  margin: 2px;
+  background: #eeeef0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.05s;
+}
+
+.calculator .chars .char-more p:hover {
+  cursor: pointer;
+}
+
+.calculator .chars .char-more .zero {
+  width: 134px;
+}
+
+.calculator .chars .char-less {
+  width: 25%;
+}
+
+.calculator .chars .char-less p {
+  width: 64px;
+  height: 102px;
+  margin: 2px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 2px solid #999;
+  background: #eeeef0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.05s;
+}
+
+.calculator .chars .char-less p:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 700px) {
   header h1 {
     font-size: 3rem;
