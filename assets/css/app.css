@@ -80,13 +80,17 @@ header h1 {
   background-image: url("../img/day-3.png");
 }
 
-.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3 {
+.main .projects .project .day-4 {
+  background-image: url("../img/day-4.png");
+}
+
+.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3, .main .projects .project .day-4 {
   height: 200px;
   background-size: cover;
   background-position: center center;
 }
 
-.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p {
+.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p, .main .projects .project .day-4 p {
   background-color: #fff951;
   color: black;
   width: 45px;
