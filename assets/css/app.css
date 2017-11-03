@@ -314,7 +314,7 @@ h3 {
 }
 
 .calculator .chars .char-more {
-  width: 210px;
+  width: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -341,29 +341,6 @@ h3 {
 
 .calculator .chars .char-more .zero {
   width: 134px;
-}
-
-.calculator .chars .char-less {
-  width: 25%;
-}
-
-.calculator .chars .char-less p {
-  width: 64px;
-  height: 102px;
-  margin: 2px;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  border-bottom: 2px solid #999;
-  background: #eeeef0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  transition: all 0.05s;
-}
-
-.calculator .chars .char-less p:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
