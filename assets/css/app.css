@@ -88,13 +88,17 @@ header h1 {
   background-image: url("../img/day-5.png");
 }
 
-.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3, .main .projects .project .day-4, .main .projects .project .day-5 {
+.main .projects .project .day-6 {
+  background-image: url("../img/day-6.png");
+}
+
+.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3, .main .projects .project .day-4, .main .projects .project .day-5, .main .projects .project .day-6 {
   height: 200px;
   background-size: cover;
   background-position: center center;
 }
 
-.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p, .main .projects .project .day-4 p, .main .projects .project .day-5 p {
+.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p, .main .projects .project .day-4 p, .main .projects .project .day-5 p, .main .projects .project .day-6 p {
   background-color: #fff951;
   color: black;
   width: 45px;
@@ -428,6 +432,7 @@ h3 {
 .search-form {
   max-width: 400px;
   margin: 50px auto;
+  color: #1aa3ff;
 }
 
 .search-form input {
@@ -485,7 +490,7 @@ h3 {
 }
 
 .search-form .hl {
-  background: #ffc600;
+  background: pink;
 }
 
 @media screen and (max-width: 700px) {
