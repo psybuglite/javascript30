@@ -154,6 +154,7 @@ header h1 {
 .playing {
   border-bottom: 1px solid #ccc;
   transform: scale(1.05);
+  background: rgba(26, 123, 255, 0.6);
 }
 
 kbd {
