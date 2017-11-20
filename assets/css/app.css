@@ -494,6 +494,59 @@ h3 {
   background: pink;
 }
 
+.pom-time {
+  height: 100vh;
+  padding: 5px;
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pom-time .timer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  align-self: center;
+}
+
+.pom-time .timer .sessiontime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pom-time .timer .sessiontime .pm {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.pom-time .timer .sessiontime .pm .minus, .pom-time .timer .sessiontime .pm .plus {
+  align-self: center;
+  border: 1px solid #1aa3ff;
+  padding: 3px 20px;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+.pom-time .timer h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.pom-time .start {
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border: 1px solid  #1aa3ff;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 700px) {
   header h1 {
     font-size: 3rem;
