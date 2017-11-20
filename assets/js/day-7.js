@@ -43,13 +43,19 @@ function minusBreakTime() {
     }
 }
 
-function timer() {
-    sesstime -= 1;
-    ses_num.innerHTML = sesstime;
-}
+
 
 function count() {
-    var counter = setInterval(timer, 1000)
+    var counter = setInterval(timer, 1000);
+
+    function timer() {
+        sesstime -= 1;
+        if (sesstime === 0) {
+            clearInterval(counter)
+        };
+
+        ses_num.innerHTML = sesstime;
+    }
 }
 
 
