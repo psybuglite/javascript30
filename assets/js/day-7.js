@@ -43,6 +43,15 @@ function minusBreakTime() {
     }
 }
 
+function timer() {
+    sesstime -= 1;
+    ses_num.innerHTML = sesstime;
+}
+
+function count() {
+    var counter = setInterval(timer, 1000)
+}
+
 
 // Add some event listeners to call the funcitons above
 sessplus.addEventListener("click", addSessTime);
@@ -50,3 +59,5 @@ sessplus.addEventListener("click", addSessTime);
 sessmin.addEventListener("click", minusSessTime);
 breakplus.addEventListener("click", addBreakTime);
 breakmin.addEventListener("click", minusBreakTime);
+
+start.addEventListener("click", count)
