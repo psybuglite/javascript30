@@ -505,6 +505,10 @@ h3 {
   align-items: center;
 }
 
+.pom-time p:hover {
+  cursor: pointer;
+}
+
 .pom-time .timer {
   display: flex;
   justify-content: space-between;
