@@ -66,4 +66,6 @@ sessmin.addEventListener("click", minusSessTime);
 breakplus.addEventListener("click", addBreakTime);
 breakmin.addEventListener("click", minusBreakTime);
 
-start.addEventListener("click", count)
+start.addEventListener("click", count);
+
+//this is something
