@@ -551,6 +551,7 @@ h3 {
   padding: 10px 20px;
   border: 1px solid  #1aa3ff;
   border-radius: 50px;
+  display: none;
 }
 
 @media screen and (max-width: 700px) {

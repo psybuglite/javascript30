@@ -23,7 +23,7 @@ var breaktime = parseInt(break_num.innerHTML);
 
 //console.log(sesstime);
 
-reset.style.display = "none";
+
 
 // some functions to do whatever I tell them.. like a boss
 function addSessTime() {
@@ -51,42 +51,47 @@ function minusBreakTime() {
 }
 
 function count() {
+    if (sesstime == 0 || breaktime == 0) {
+        alert("set time");
+    } else {
+        reset.style.display = "none";
 
-    start.style.display = "none";
-    reset.style.display = "none";
-    breakplus.style.display = "none";
-    breakmin.style.display = "none";
-    sessplus.style.display = "none";
-    sessmin.style.display = "none";
-    title2.style.display = "none";
-    title1.style.display = "none";
-    break_num.style.display = "none";
+        start.style.display = "none";
+        reset.style.display = "none";
+        breakplus.style.display = "none";
+        breakmin.style.display = "none";
+        sessplus.style.display = "none";
+        sessmin.style.display = "none";
+        title2.style.display = "none";
+        title1.style.display = "none";
+        break_num.style.display = "none";
 
-    type.innerHTML = "Session time:";
+        type.innerHTML = "Session time:";
 
-    var counter = setInterval(timer, 1000);
+        var counter = setInterval(timer, 1000);
 
-    function timer() {
-        sesstime -= 1;
-        if (sesstime === 0) {
-            audio.play();
-            clearInterval(counter)
-            var startBreak = setInterval(breaktimer, 1000);
-            ses_num.style.display = "none";
-        };
-        ses_num.innerHTML = sesstime;
+        function timer() {
+            sesstime -= 1;
+            if (sesstime === 0) {
+                //audio.play();
+                clearInterval(counter)
+                var startBreak = setInterval(breaktimer, 1000);
+                ses_num.style.display = "none";
+            };
+            ses_num.innerHTML = sesstime;
 
-        function breaktimer() {
-            type.innerHTML = "Break Time: ";
-            break_num.style.display = "block";
-            breaktime -= 1;
-            if (breaktime == 0) {
-                clearInterval(startBreak);
-                type.innerHTML = "";
-                break_num.style.display = "none";
-                reset.style.display = "block"
+            function breaktimer() {
+                type.innerHTML = "Break Time: ";
+                break_num.style.display = "block";
+                breaktime -= 1;
+                if (breaktime == 0) {
+                    clearInterval(startBreak);
+                    type.innerHTML = "";
+                    break_num.style.display = "none";
+                    reset.style.display = "block"
+                }
+                break_num.innerHTML = breaktime;
             }
-            break_num.innerHTML = breaktime;
         }
     }
 }
@@ -104,11 +109,13 @@ function restart() {
     title1.style.display = "block";
     break_num.style.display = "block";
     ses_num.style.display = "block";
+    reset.style.display = "none";
 
-    break_num.innerHTML = 5;
-    ses_num.innerHTML = 5;
-    var sesstime = 5;
-    var breaktime = 5;
+    var sesstime = 0;
+    var breaktime = 0;
+    break_num.innerHTML = breaktime;
+    ses_num.innerHTML = sesstime;
+
 }
 
 
