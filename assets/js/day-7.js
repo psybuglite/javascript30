@@ -100,7 +100,7 @@ function count() {
                     break_num.style.display = "none";
                     reset.style.display = "block"
                 }
-                if (sesstime % 60 >= 10) {
+                if (breaktime % 60 >= 10) {
                     break_num.innerHTML = (`${Math.floor(breaktime/60)} : ${breaktime % 60}`);
                 } else {
                     break_num.innerHTML = (`${Math.floor(breaktime/60)} : 0${breaktime % 60}`);
