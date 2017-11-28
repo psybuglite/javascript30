@@ -27,8 +27,10 @@ var breaktime = parseInt(break_num.innerHTML);
 
 // some functions to do whatever I tell them.. like a boss
 function addSessTime() {
-    sesstime += 5;
-    ses_num.innerHTML = sesstime;
+    if (sesstime < 55) {
+        sesstime += 5;
+        ses_num.innerHTML = sesstime;
+    }
 }
 
 function minusSessTime() {
@@ -39,8 +41,10 @@ function minusSessTime() {
 }
 
 function addBreakTime() {
-    breaktime += 5;
-    break_num.innerHTML = breaktime;
+    if (sesstime < 55) {
+        breaktime += 5;
+        break_num.innerHTML = breaktime;
+    }
 }
 
 function minusBreakTime() {
@@ -54,6 +58,8 @@ function count() {
     if (sesstime == 0 || breaktime == 0) {
         alert("set time");
     } else {
+        sesstime *= 60;
+        breaktime *= 60;
         reset.style.display = "none";
 
         start.style.display = "none";
@@ -78,7 +84,11 @@ function count() {
                 var startBreak = setInterval(breaktimer, 1000);
                 ses_num.style.display = "none";
             };
-            ses_num.innerHTML = sesstime;
+            if (sesstime % 60 >= 10) {
+                ses_num.innerHTML = (`${Math.floor(sesstime/60)} : ${sesstime % 60}`);
+            } else {
+                ses_num.innerHTML = (`${Math.floor(sesstime/60)} : 0${sesstime % 60}`);
+            }
 
             function breaktimer() {
                 type.innerHTML = "Break Time: ";
@@ -90,7 +100,11 @@ function count() {
                     break_num.style.display = "none";
                     reset.style.display = "block"
                 }
-                break_num.innerHTML = breaktime;
+                if (sesstime % 60 >= 10) {
+                    break_num.innerHTML = (`${Math.floor(breaktime/60)} : ${breaktime % 60}`);
+                } else {
+                    break_num.innerHTML = (`${Math.floor(breaktime/60)} : 0${breaktime % 60}`);
+                }
             }
         }
     }
