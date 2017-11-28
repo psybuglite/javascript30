@@ -495,14 +495,10 @@ h3 {
 }
 
 .pom-time {
-  height: 100vh;
   padding: 5px;
   max-width: 40%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
 }
 
 .pom-time p:hover {
@@ -510,8 +506,6 @@ h3 {
 }
 
 .pom-time .timer {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   align-content: center;
   align-self: center;
@@ -546,7 +540,7 @@ h3 {
 .pom-time .start {
   font-size: 26px;
   text-transform: uppercase;
-  padding: 20px 50px;
+  padding: 10px 20px;
   border: 1px solid  #1aa3ff;
   border-radius: 50px;
 }
@@ -554,7 +548,7 @@ h3 {
 .pom-time .reset {
   font-size: 26px;
   text-transform: uppercase;
-  padding: 20px 50px;
+  padding: 10px 20px;
   border: 1px solid  #1aa3ff;
   border-radius: 50px;
 }
