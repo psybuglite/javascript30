@@ -92,13 +92,21 @@ header h1 {
   background-image: url("../img/day-6.png");
 }
 
-.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3, .main .projects .project .day-4, .main .projects .project .day-5, .main .projects .project .day-6 {
+.main .projects .project .day-7 {
+  background-image: url("../img/day-7.png");
+}
+
+.main .projects .project .day-8 {
+  background-image: url("../img/day-8.png");
+}
+
+.main .projects .project .day, .main .projects .project .day-1, .main .projects .project .day-2, .main .projects .project .day-3, .main .projects .project .day-4, .main .projects .project .day-5, .main .projects .project .day-6, .main .projects .project .day-7, .main .projects .project .day-8 {
   height: 200px;
   background-size: cover;
   background-position: center center;
 }
 
-.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p, .main .projects .project .day-4 p, .main .projects .project .day-5 p, .main .projects .project .day-6 p {
+.main .projects .project .day p, .main .projects .project .day-1 p, .main .projects .project .day-2 p, .main .projects .project .day-3 p, .main .projects .project .day-4 p, .main .projects .project .day-5 p, .main .projects .project .day-6 p, .main .projects .project .day-7 p, .main .projects .project .day-8 p {
   background-color: #fff951;
   color: black;
   width: 45px;
