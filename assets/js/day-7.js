@@ -79,7 +79,7 @@ function count() {
         function timer() {
             sesstime -= 1;
             if (sesstime === 0) {
-                //audio.play();
+                audio.play();
                 clearInterval(counter)
                 var startBreak = setInterval(breaktimer, 1000);
                 ses_num.style.display = "none";
@@ -95,6 +95,7 @@ function count() {
                 break_num.style.display = "block";
                 breaktime -= 1;
                 if (breaktime == 0) {
+                  audio.play();
                     clearInterval(startBreak);
                     type.innerHTML = "";
                     break_num.style.display = "none";
